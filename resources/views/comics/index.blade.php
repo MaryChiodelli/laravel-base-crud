@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div>
+    <a href="{{ route('comics.create') }}">Add new comic</a>
+</div>
 <h1>Comics</h1>
 <ul>
     @foreach($comics as $comic)
