@@ -1,3 +1,9 @@
+@import './partials/vars';
+@import './partials/generals';
+@import './partials/utilities';
+
+@import './comics';
+
 .alert-error {
     color: red;
 }

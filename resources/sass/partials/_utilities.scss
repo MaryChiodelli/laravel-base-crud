@@ -1,0 +1,29 @@
+.container-sm {
+  max-width: 1052px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.col-66 {
+  flex-basis: calc( (100% / 3) * 2 );
+}
+
+.col-33 {
+  flex-basis: calc( (100% / 3) );
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-4 {
+  flex-basis: calc(100% / 4);
+}
+
+.list-inline {
+  display: flex;
+}
+
+.row {
+  display: flex;
+}

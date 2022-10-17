@@ -1,3 +1,107 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1312px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 1rem;
+  border: none;
+  font-size: 1rem;
+  line-height: 40px;
+  text-align: center;
+  background-color: #0282F9;
+  color: white;
+}
+
+.container-sm {
+  max-width: 1052px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.col-66 {
+  flex-basis: 66.6666666667%;
+}
+
+.col-33 {
+  flex-basis: 33.3333333333%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-4 {
+  flex-basis: 25%;
+}
+
+.list-inline {
+  display: flex;
+}
+
+.row {
+  display: flex;
+}
+
+.header-wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.header-wrapper h1 {
+  margin-right: auto;
+}
+
+.comics-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.comics-wrapper .card img {
+  width: 100%;
+  aspect-ratio: 9/16;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.comics-wrapper .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
 .alert-error {
   color: red;
 }

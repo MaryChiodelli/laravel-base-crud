@@ -1,0 +1,32 @@
+.header-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 1rem;
+
+    h1 {
+        margin-right: auto;
+    }
+}
+
+.comics-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+
+    .card {
+        img {
+            width: 100%;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
