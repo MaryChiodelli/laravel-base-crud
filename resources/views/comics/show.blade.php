@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<div>
+    <a href="{{ route('comics.edit', $comic) }}">Edit</a>
+</div>
 <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
 <h1>{{ $comic->title }}</h1>
 <p>{{ $comic->description }}</p>
