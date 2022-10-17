@@ -1,0 +1,21 @@
+header {
+  padding: 1rem 0;
+  background-color: #fff;
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    a {
+      display: inline-block;
+      line-height: 40px;
+      border-bottom: 4px solid #fff;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      border-color: #0282f9;
+    }
+  }
+}

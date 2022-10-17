@@ -41,6 +41,12 @@ img {
   color: white;
 }
 
+.btn.delete {
+  border: 2px solid #EB2D36;
+  background-color: transparent;
+  color: #EB2D36;
+}
+
 .container-sm {
   max-width: 1052px;
   padding: 0 1rem;
@@ -86,20 +92,52 @@ img {
 
 .comics-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1rem;
 }
 
-.comics-wrapper .card img {
+.comics-wrapper .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.comics-wrapper .card .card-content img {
   width: 100%;
   aspect-ratio: 9/16;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.comics-wrapper .btn {
+.comics-wrapper .card .card-footer .btn {
+  display: block;
   width: 100%;
+}
+
+.comics-wrapper .btn {
   margin-top: 0.5rem;
+}
+
+header {
+  padding: 1rem 0;
+  background-color: #fff;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header .nav a {
+  display: inline-block;
+  line-height: 40px;
+  border-bottom: 4px solid #fff;
+  text-transform: uppercase;
+}
+
+header .nav a:hover {
+  border-color: #0282f9;
 }
 
 .alert-error {
@@ -108,5 +146,10 @@ img {
 
 .input-error {
   border-color: red;
+}
+
+footer {
+  padding: 1rem 0;
+  text-align: center;
 }
 

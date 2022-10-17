@@ -3,6 +3,7 @@
 @import './partials/utilities';
 
 @import './comics';
+@import './header';
 
 .alert-error {
     color: red;
@@ -10,4 +11,9 @@
 
 .input-error {
     border-color: red;
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
 }

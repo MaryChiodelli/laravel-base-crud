@@ -40,3 +40,9 @@ img {
   background-color: $brand-color;
   color: white;
 }
+
+.btn.delete {
+  border: 2px solid $delete-color;
+  background-color: transparent;
+  color: $delete-color;
+}

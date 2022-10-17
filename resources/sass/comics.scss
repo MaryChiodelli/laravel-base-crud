@@ -14,19 +14,31 @@
 
 .comics-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 1rem;
 
     .card {
-        img {
-            width: 100%;
-            aspect-ratio: 9/16;
-            object-fit: cover;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .card-content{
+            img {
+                width: 100%;
+                aspect-ratio: 9/16;
+                object-fit: cover;
+            }
+        }
+
+        .card-footer {
+            .btn {
+                display: block;
+                width: 100%;
+            }
         }
     }
 
     .btn {
-        width: 100%;
         margin-top: 0.5rem;
     }
 }
